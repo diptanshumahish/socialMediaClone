@@ -3,6 +3,7 @@
     margin: 0;
     padding:0;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 body{
     background: #dde6e7;
@@ -103,6 +104,7 @@ nav{
     /* height:100vh; */
     border-radius: 0.2em;
     
+    
 }
 .rightsidebar{
     /* background-color:rgb(255, 255, 255); */
@@ -119,6 +121,8 @@ nav{
 .main{
     flex-basis:47%;
     background-color:white ;
+    border-radius:0.2em ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .implinks a,.shortcut a{
     text-decoration: none;
@@ -165,4 +169,40 @@ nav{
    font-weight:bold;
     font-size: 16px;
 }
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+   
+}
+.leftevent{
+    border-radius:1em;
+    height:6em;
+    width:6em;
+    margin-right:15px;
+    padding-top:10px ;
+    text-align: center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 14px rgba(0, 0, 0, 0.1);
+}
+.event p{
+    font-size: 12px;
+    
+}
+.event a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#1876f2;
+    
+}
+.leftevent span{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background: #1876f2;
+    color:white;
+    padding:4px 0;
 
+}

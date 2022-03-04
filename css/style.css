@@ -5,6 +5,88 @@
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
+.conatiner1{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    display:block;
+    position:absolute;
+    top:10px;
+    left: -8vw;
+    overflow:hidden;
+    background-color: #eed07cc9;
+    animation-name: bwoo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+    animation-delay: 1s;
+}
+.conatiner2{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    display:block;
+    position:absolute;
+    top:-10vh;
+    left: 2px;
+    overflow:hidden;
+    background-color: #eed07cc9;
+    animation-name: bwoo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+    animation-delay: 6s;
+}
+.conatiner3{
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    display:block;
+    position:absolute;
+    top:18vh;
+    left: 20px;
+    overflow:hidden;
+    background-color: #ebd69e70;
+    animation-name: bwoo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+}
+@keyframes bwoo {
+    0%{
+        transform:scale(0.8);
+        transform:translateX()
+    }
+    25%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.2);
+    }
+    75%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0.8);
+    }
+    
+}
+.conatiner4{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    display:block;
+    position:absolute;
+    top:50vh;
+    left:13vw;
+    overflow:hidden;
+    background-color: #e0b53c70;
+    animation-name: bwoo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+    animation-delay: 2s;
+}
 body{
     background: #dde6e7;
 }
@@ -12,7 +94,7 @@ nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background:#1876f2;
+    background:#d8882dbd;
     padding:5px 5%;
     position:sticky;
     top:0;
@@ -37,11 +119,12 @@ nav{
     list-style: none;
     display:inline-block;
     margin-left:2vw;
+    cursor: pointer;
   
 
 }
 .left img{
-    fill:white;
+    fill:rgb(255, 255, 255);
     margin: 0 15px;
 }
 .usericon img{
@@ -52,7 +135,7 @@ nav{
     height:14px;
 }
 .search-box{
-    background: #efedef;
+    background: #ffffff;
     width:22vw;
     border-radius: 1rem;
     display: flex;
@@ -67,7 +150,7 @@ nav{
     background:transparent;
     outline: none;
     border:0;
-  background: #efedef;
+  background: #ffffff;
   padding:0.2em; 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
@@ -144,7 +227,7 @@ nav{
 }
 
 .implinks a:last-child{
-    color:#1876f2;
+    color:#bb5526;
 }
 .implinks{
     border-bottom:1px solid grey;
@@ -162,7 +245,7 @@ nav{
 }
 .sidebartitle a{
     text-decoration: none;
-    color:#1876f2;
+    color:#e26f2d;
     font-size: 12px;
 }
 .sidebartitle h4{
@@ -193,7 +276,7 @@ nav{
 .event a{
     font-size: 12px;
     text-decoration: none;
-    color:#1876f2;
+    color:#cc5815;
     
 }
 .leftevent span{
@@ -201,7 +284,7 @@ nav{
     bottom:0;
     left:0;
     width:100%;
-    background: #1876f2;
+    background: #d8882ddc;
     color:white;
     padding:4px 0;
 

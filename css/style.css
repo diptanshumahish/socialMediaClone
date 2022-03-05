@@ -25,6 +25,11 @@
     --onlinelist:black;
     --boxshadow1:rgba(0, 0, 0, 0.1) 0px 4px 12px;
     --boxshadow2:rgba(0, 0, 0, 0.336) 0px 4px 12px;
+
+    --container1:#eed07cc9;
+    --container2:#eed07cc9;
+    --container3:#ebd69e70;
+    --container4: #e0b53c70;
 }
 
 .darktheme{
@@ -47,14 +52,13 @@
     --boxshadow1:rgba(240, 231, 231, 0.1) 0px 4px 12px;
     --boxshadow2:rgba(253, 253, 253, 0.1) 0px 4px 12px;
 
+    --container1:#6e613cc9;
+    --container2:#664e0dc9;
+    --container3:#36332b70;
+    --container4: #251e0b70;
+
 
 }
-
-
-
-
-
-
 
 
 .conatiner1{
@@ -66,7 +70,7 @@
     top:10px;
     left: -8vw;
     pointer-events: none;
-    background-color: #eed07cc9;
+    background-color:var(--container1);
     animation-name: bwoo;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -84,7 +88,7 @@
     top:-15vh;
     left: -5vw;
     overflow:hidden;
-    background-color: #eed07cc9;
+    background-color:var(--container2);
     animation-name: bwoo;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -103,7 +107,7 @@
     top:10vh;
     left: 20px;
     pointer-events: none;
-    background-color: #ebd69e70;
+    background-color: var(--container3);
     animation-name: bwoo;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -139,7 +143,7 @@
     top:43vh;
     left:13vw;
     pointer-events: none;
-    background-color: #e0b53c70;
+    background-color: var(--container4);
     animation-name: bwoo;
     animation-duration: 10s;
     animation-iteration-count: infinite;

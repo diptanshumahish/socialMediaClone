@@ -492,7 +492,7 @@ color:#351e11;
     justify-content: space-between;
 }
 .activityicons div img{
-    width:18px;
+    width:12px;
     margin-right:10px;
 
 }
@@ -500,6 +500,7 @@ color:#351e11;
     display: inline-flex;
     align-items: center;
     margin-right:30px;
+    font-size: 12px;
 }
 .postprofileicon{
     display:flex;
@@ -515,4 +516,20 @@ color:#351e11;
     color:#351e11;
     
 
+}
+.end{
+    display:block;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 0.5em;
+    margin-top:20px;
+    background-color: #e49628e8;
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 4px 12px;
+}
+.footer{
+    text-align: center;
+    padding:10px 0 20px;
+    font-size: 13px;
 }

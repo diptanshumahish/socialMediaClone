@@ -25,7 +25,7 @@
     --onlinelist:black;
     --boxshadow1:rgba(0, 0, 0, 0.1) 0px 4px 12px;
     --boxshadow2:rgba(0, 0, 0, 0.336) 0px 4px 12px;
-
+    --mixblend:none;
     --container1:#eed07cc9;
     --container2:#eed07cc9;
     --container3:#ebd69e70;
@@ -49,9 +49,9 @@
     --userprofiletext:rgb(230, 207, 207);
     --settinglinksA:#a09995;
     --onlinelist:rgb(216, 205, 205);
-    --boxshadow1:rgba(240, 231, 231, 0.1) 0px 4px 12px;
+    --boxshadow1:rgba(180, 168, 168, 0.37) 0px  4px 10px;
     --boxshadow2:rgba(253, 253, 253, 0.1) 0px 4px 12px;
-
+    --mixblend:lighten;
     --container1:#6e613cc9;
     --container2:#664e0dc9;
     --container3:#36332b70;
@@ -295,6 +295,10 @@ nav{
     color:var(--text-color);
 
 }
+.implinks a{
+    mix-blend-mode:var(--mixblend);
+}
+
 .implinks a img,.shortcut a img{
     width:25px;
     margin-right:10px;
@@ -600,13 +604,14 @@ color:var(--writepostheading);
     width:90%;
     max-width: 350px;
     background-color: var(--settingscolor);
-    box-shadow: var(--boxshadow2);
+    /* box-shadow: var(--boxshadow2); */
     border-radius:0.3em;
     overflow: hidden;
     top:8vh;
     right:5%;
     max-height: 0;
     transition:max-height 0.3s ;
+    z-index:  100;
 
 }
 .settingsMenuHeight{

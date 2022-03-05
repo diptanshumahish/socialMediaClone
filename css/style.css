@@ -5,6 +5,58 @@
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
+
+:root{
+    --body-color:#efefefef;
+    --nav-color: #d8882dbd;
+    --bg-color:rgba(243, 230, 203, 0.397);
+    --text-color:rgb(58, 53, 53);
+    --shortcut:#554d4d;
+    --event:black;
+    --writepostheading:#351e11;
+    --posttext:black;
+    --posttext-a: #351e11;
+    --posttext-span:#351e11;
+    --activityicontext:black;
+    --settingscolor:#dde6e7e1;
+    --addpostlinkcolor:#351e11;
+    --userprofiletext:black;
+    --settinglinksA:#351e11;
+    --onlinelist:black;
+    --boxshadow1:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --boxshadow2:rgba(0, 0, 0, 0.336) 0px 4px 12px;
+}
+
+.darktheme{
+    --body-color:#000000ef;
+    --nav-color: #3b2308bd;
+    --bg-color:rgba(31, 30, 28, 0.397);
+    --text-color:rgb(235, 228, 228);
+    --shortcut:#d8c9c9;
+    --event:rgb(255, 255, 255);
+    --posttext:white;
+    --writepostheading:#ffffff;
+    --posttext-a:rgb(134, 122, 122);
+    --posttext-span:#f1ceb9;
+    --activityicontext:rgb(255, 255, 255);
+    --settingscolor:#2b2c2cdc;
+    --addpostlinkcolor:#c4bab5;
+    --userprofiletext:rgb(230, 207, 207);
+    --settinglinksA:#a09995;
+    --onlinelist:rgb(216, 205, 205);
+    --boxshadow1:rgba(240, 231, 231, 0.1) 0px 4px 12px;
+    --boxshadow2:rgba(253, 253, 253, 0.1) 0px 4px 12px;
+
+
+}
+
+
+
+
+
+
+
+
 .conatiner1{
     height:200px;
     width:200px;
@@ -21,7 +73,7 @@
     transition-timing-function: ease;
     animation-delay: 1s;
     mix-blend-mode: darken;
-    box-shadow: rgba(0, 0, 0, 0.055) 0px 4px 12px;
+    box-shadow: var(--boxshadow2);
 }
 .conatiner2{
     height:150px;
@@ -40,7 +92,7 @@
     animation-delay: 6s;
     mix-blend-mode: darken;
     pointer-events: none;
-    box-shadow: rgba(0, 0, 0, 0.041) 0px 4px 12px;
+    box-shadow: var(--boxshadow2);
 }
 .conatiner3{
     height:250px;
@@ -57,7 +109,7 @@
     animation-iteration-count: infinite;
     transition-timing-function: ease;
     mix-blend-mode: darken;
-    box-shadow: rgba(0, 0, 0, 0.055) 0px 4px 12px;
+    box-shadow: var(--boxshadow2);
 }
 @keyframes bwoo {
     0%{
@@ -96,13 +148,14 @@
     mix-blend-mode: darken;
 }
 body{
-    background: #dde6e7;
+    background: var(--body-color);
+    transition:background 0.3s;
 }
 nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background:#d8882dbd;
+    background:var(--nav-color);
     padding:5px 5%;
     position:sticky;
     top:0;
@@ -151,7 +204,7 @@ nav{
     align-items: center;
     padding: 0 15px;
     border-top-style: hidden;
-    box-shadow: rgba(0, 0, 0, 0.199) 0px 4px 12px;
+    box-shadow: var(--boxshadow2);
     z-index: 100;
   
 }
@@ -162,7 +215,7 @@ nav{
     border:0;
   background: #f5f1f1;
   padding:0.2em; 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: var(--boxshadow2);
 
 }
 .usericon{
@@ -189,8 +242,9 @@ nav{
 .online img{
     border-radius:50%;
 }
-.onelinelist p{
+.onlinelist p{
     display:flex;
+    color:var(--onlinelist);
 }
 .container{
     display:flex;
@@ -216,7 +270,7 @@ nav{
     align-self: flex-start;
     /* height:100vh; */
     border-radius: 0.2em;
-    background-color: white;
+    background:var(--bg-color);
     padding:0.5em;
     
 }
@@ -234,11 +288,8 @@ nav{
     align-items: center;
     margin-bottom: 30px;
     width:fit-content;
-    color:#626262;
+    color:var(--text-color);
 
-}
-#leftwala{
-    fill:#1876f2;
 }
 .implinks a img,.shortcut a img{
     width:25px;
@@ -255,7 +306,7 @@ nav{
 }
 .shortcut p{
     margin: 25px 0;
-    color:#626262;
+    color:var(--shortcut);
     font-weight:bold;
 }
 .sidebartitle{
@@ -272,11 +323,13 @@ nav{
 .sidebartitle h4{
    font-weight:bold;
     font-size: 16px;
+    color:var(--event);
 }
 .event{
     display: flex;
     font-size: 14px;
     margin-bottom: 20px;
+    color:var(--event);
    
 }
 .leftevent{
@@ -288,7 +341,7 @@ nav{
     text-align: center;
     position:relative;
     overflow:hidden;
-    box-shadow:0 0 14px rgba(0, 0, 0, 0.1);
+    box-shadow:var(--boxshadow2);
 }
 .event p{
     font-size: 12px;
@@ -337,7 +390,7 @@ nav{
     margin-bottom: 20px;
     border-radius:0.4em;
     background-color: rgba(243, 230, 203, 0.397);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: var(--boxshadow1);
 }
 .story{
     flex-basis: 18%;
@@ -347,7 +400,7 @@ nav{
     background-position: center;
     background-size: cover;
     border-radius:0.3em;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: var(--boxshadow1);
     cursor: pointer;
 
 }
@@ -397,11 +450,11 @@ nav{
 }
 .writepostcontainer{
     width:100%;
-    background-color: rgba(243, 230, 203, 0.397);
+    background:var(--bg-color);
     border-radius:0.4em;
     padding:1%;
     color:#ac8753;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: var(--boxshadow1);
 }
 .userprofile{
     display:flex;
@@ -413,11 +466,14 @@ nav{
     border-radius: 50%;
     margin-right: 10px;
 }
-.userprofile p{
+.userprofile  p{
 margin-bottom: -5px;
 font-weight: bold;
-color:#351e11;
+color:var(--writepostheading);
 
+}
+.userprofile div a{
+    color:var(--userprofiletext);
 }
 .userprofile small{
     font-size:12px;
@@ -452,7 +508,7 @@ color:#351e11;
     display: flex;
     align-items: center;
     margin-right: 10px;
-    color:#351e11;
+    color:var(--addpostlinkcolor);
     font-size: 13px;;
 }
 .addpostlinks img{
@@ -461,24 +517,25 @@ color:#351e11;
 }
 .postcontainer{
     width:100%;
-    background-color: rgba(243, 230, 203, 0.397);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background:var(--bg-color);
+    box-shadow: var(--boxshadow1);
     border-radius:0.2em;
     padding:1%;
     margin-top:20px;
 }
 .userprofile span{
     font-size: 10px;
-    color:#351e11;
+    color:var(--posttext-span);
 }
 .posttext{
     margin: 15px 0;
     font-size:13px;
     text-align: left;
+    color:var(--posttext);
 }
 .posttext a{
     text-decoration: none;
-    color:#351e11;
+    color:var(--posttext-a);
     font-weight: bold;
 }
 .postimage{
@@ -501,6 +558,7 @@ color:#351e11;
     align-items: center;
     margin-right:30px;
     font-size: 12px;
+    color:var(--activityicontext);
 }
 .postprofileicon{
     display:flex;
@@ -526,10 +584,83 @@ color:#351e11;
     border-radius: 0.5em;
     margin-top:20px;
     background-color: #e49628e8;
-    box-shadow: rgba(0, 0, 0, 0.336) 0px 4px 12px;
+    box-shadow: var(--boxshadow2);
 }
 .footer{
     text-align: center;
     padding:10px 0 20px;
     font-size: 13px;
+}
+.settingsmenu{
+    position: absolute;
+    width:90%;
+    max-width: 350px;
+    background-color: var(--settingscolor);
+    box-shadow: var(--boxshadow2);
+    border-radius:0.3em;
+    overflow: hidden;
+    top:8vh;
+    right:5%;
+    max-height: 0;
+    transition:max-height 0.3s ;
+
+}
+.settingsMenuHeight{
+ max-height: 450px;
+}
+.userprofile a{
+    font-size: 12px;
+    color:#351e11;
+    text-decoration: none;
+}
+.settingsinner{
+    padding:20px;
+}
+.settingsmenu hr{
+    border:0;
+    height:1px;
+    background-color: #351e11;
+    margin: 15px 0;
+}
+.settinglinks{
+    display:flex;
+    align-items: center;
+    margin: 15px 0;;
+
+}
+.settinglinks .settingsicon{
+    width:38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.settinglinks a{
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color:var(--settinglinksA);
+}
+#darkbtn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background-color: #626262;
+    width:45px;
+    border-radius:15px;
+    padding:2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+}
+#darkbtn span{
+    width:18px;
+    height:18px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display:inline-block;
+}
+#darkbtn.darkbtnon{
+    padding-left: 23px;
+    background: black;
 }

@@ -186,6 +186,12 @@ nav{
     left:0;
 
 }
+.online img{
+    border-radius:50%;
+}
+.onelinelist p{
+    display:flex;
+}
 .container{
     display:flex;
     justify-content: space-between;
@@ -430,7 +436,8 @@ color:#351e11;
     border:0;
     outline:0;
     border-bottom:1px solid #ccc;
-    background-color: #E5E6DC;
+  
+    background:transparent;
     resize:none;
     border-radius: 0.1em;
 }
@@ -451,4 +458,61 @@ color:#351e11;
 .addpostlinks img{
     width:20px;
     margin-right:5px;
+}
+.postcontainer{
+    width:100%;
+    background-color: rgba(243, 230, 203, 0.397);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius:0.2em;
+    padding:1%;
+    margin-top:20px;
+}
+.userprofile span{
+    font-size: 10px;
+    color:#351e11;
+}
+.posttext{
+    margin: 15px 0;
+    font-size:13px;
+    text-align: left;
+}
+.posttext a{
+    text-decoration: none;
+    color:#351e11;
+    font-weight: bold;
+}
+.postimage{
+    width:100%;
+    border-radius: 0.3em;
+    margin-bottom:15px;
+}
+.postrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activityicons div img{
+    width:18px;
+    margin-right:10px;
+
+}
+.activityicons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right:30px;
+}
+.postprofileicon{
+    display:flex;
+    align-items: center;
+}
+.postprofileicon img{
+    width:20px;
+    border-radius:50%;
+    margin-right: 5px;
+}
+.dots{
+    height: 12px;
+    color:#351e11;
+    
+
 }

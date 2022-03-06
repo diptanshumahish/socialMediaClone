@@ -7,7 +7,7 @@
 }
 
 :root{
-    --body-color:#efefefef;
+    --body-color:#e7dedeef;
     --nav-color: #d8882dbd;
     --bg-color:rgba(243, 230, 203, 0.397);
     --text-color:rgb(58, 53, 53);
@@ -29,6 +29,7 @@
     --storyback:rgba(196, 188, 167, 0.397);
     --footer:black;
     --textinput:black;
+   
 
     --container1:#eed07cc9;
     --container2:#eed07cc9;
@@ -59,6 +60,7 @@
     --storyback:rgba(29, 28, 25, 0.397);
     --footer:white;
     --textinput:white;
+    
 
     --container1:#6e613cc9;
     --container2:#664e0dc9;
@@ -223,9 +225,8 @@ nav{
     background:transparent;
     outline: none;
     border:0;
-  background: #f5f1f1;
+  background: #ffffff;
   padding:0.2em; 
-  box-shadow: var(--boxshadow2);
 
 }
 .usericon{
@@ -397,14 +398,23 @@ nav{
     left:4px;
 
 }
+.storyfull{
+    border-radius:0.4em;
+    background-color:var(--storyback);
+    box-shadow: var(--boxshadow1);
+    
+}
+.storyfull p{
+    color:var(--footer);
+    padding:1%;
+
+}
 .storygallery{
     display:flex;
     padding: 1%;
     justify-content: space-between;
     margin-bottom: 20px;
-    border-radius:0.4em;
-    background-color:var(--storyback);
-    box-shadow: var(--boxshadow1);
+
 }
 .story{
     flex-basis: 18%;
@@ -415,7 +425,6 @@ nav{
     background-size: cover;
     border-radius:0.3em;
     cursor: pointer;
-    margin-top: 10px;
     margin-bottom: 10px;
 
 }

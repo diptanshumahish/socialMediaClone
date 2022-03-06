@@ -18,7 +18,7 @@
     --posttext-a: #351e11;
     --posttext-span:#351e11;
     --activityicontext:black;
-    --settingscolor:#dde6e7e1;
+    --settingscolor:#dde6e7f3;
     --addpostlinkcolor:#351e11;
     --userprofiletext:black;
     --settinglinksA:#351e11;
@@ -28,7 +28,7 @@
     --mixblend:none;
     --storyback:rgba(196, 188, 167, 0.397);
     --footer:black;
-    --hr:#351e11;
+    --textinput:black;
 
     --container1:#eed07cc9;
     --container2:#eed07cc9;
@@ -48,17 +48,17 @@
     --posttext-a:rgb(134, 122, 122);
     --posttext-span:#f1ceb9;
     --activityicontext:rgb(255, 255, 255);
-    --settingscolor:#2b2c2cdc;
+    --settingscolor:#2b2c2cf1;
     --addpostlinkcolor:#c4bab5;
     --userprofiletext:rgb(230, 207, 207);
-    --settinglinksA:#a09995;
+    --settinglinksA:#dddcdc;
     --onlinelist:rgb(216, 205, 205);
     --boxshadow1:rgba(180, 168, 168, 0.37) 0px  0px  1px;
     --boxshadow2:rgba(253, 253, 253, 0.1) 0px 1px 12px;
     --mixblend:lighten;
     --storyback:rgba(29, 28, 25, 0.397);
     --footer:white;
-    --hr:white;
+    --textinput:white;
 
     --container1:#6e613cc9;
     --container2:#664e0dc9;
@@ -66,11 +66,6 @@
     --container4: #251e0b70;
 
 
-}
-
-.hr{
-    background-color: var(--hr);
-    color:var(--hr);
 }
 .conatiner1{
     height:200px;
@@ -479,6 +474,7 @@ nav{
 .userprofile{
     display:flex;
     align-items: center;
+    margin-bottom: 10px;
 
 }
 .userprofile img{
@@ -512,7 +508,7 @@ color:var(--writepostheading);
     border:0;
     outline:0;
     border-bottom:1px solid #ccc;
-  
+    color:var(--textinput);
     background:transparent;
     resize:none;
     border-radius: 0.1em;
@@ -640,12 +636,6 @@ color:var(--writepostheading);
 }
 .settingsinner{
     padding:20px;
-}
-.settingsmenu hr{
-    border:0;
-    height:1px;
-    background-color: #351e11;
-    margin: 15px 0;
 }
 .settinglinks{
     display:flex;

@@ -82,3 +82,93 @@
     width:10px;
    
 }
+.profileinfo{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.infocol{
+    flex-basis: 33%;
+}
+.postcol{
+    flex-basis: 65%;
+}
+.bio{
+    background-color:var(--bg-color);
+    box-shadow: var(--boxshadow1);
+    padding: 20px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    border-radius: 0.3em;
+}
+.bio h3{
+    font-weight: bold;
+    color:var(--text-color);
+}
+.biotext{
+    text-align:left;
+    margin: 10px 0;
+    font-size: 13px;
+}
+.bio ul li{
+    list-style: none;
+    font-size: 15px;
+    margin: 15px 0;
+    display:flex;
+    align-items: center;
+
+}
+.bio ul li img{
+    width:25px;
+    margin-right: 10px;
+}
+.titlebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titlebox a{
+    text-decoration: none;
+    color:var(--posttext-a);
+    font-size: 14px;
+}
+.photobox img{
+    width:100px;
+   height:100px;
+   object-fit: cover;  
+   border-radius: 0.1em;
+}
+.photobox{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+   
+}
+.bio p{
+    font-size: 13px;
+}
+.friendbox{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+
+}
+.friendbox div img{
+width:100px;
+   height:100px;
+   object-fit: cover;  
+   cursor: pointer;
+   padding-bottom: 20px;
+   border-radius: 0.1em;
+}
+.friendbox div{
+    position: relative;
+}
+.friendbox p{
+    position: absolute;
+    bottom:0;
+    left: 0;
+}

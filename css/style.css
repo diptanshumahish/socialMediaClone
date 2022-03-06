@@ -182,6 +182,10 @@ nav{
     height:7vh;
     z-index:100;
 }
+nav a{
+    text-decoration: none;
+    color:white;
+}
 .logo{
     width: 160px;
     margin-right:10px;

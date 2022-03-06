@@ -402,18 +402,24 @@ nav{
     border-radius:0.4em;
     background-color:var(--storyback);
     box-shadow: var(--boxshadow1);
+    border:0.2px solid rgba(180, 180, 180, 0.178);
+    border-radius: 0.3em;
+
+    
     
 }
 .storyfull p{
     color:var(--footer);
     padding:1%;
-
+      
 }
 .storygallery{
     display:flex;
     padding: 1%;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+ 
 
 }
 .story{
@@ -473,12 +479,14 @@ nav{
     transform:translateX(-50%); 
 }
 .writepostcontainer{
+    margin-top: 10px;
     width:100%;
     background:var(--bg-color);
     border-radius:0.4em;
     padding:1%;
     color:#ac8753;
     box-shadow: var(--boxshadow1);
+    border:0.2px solid rgba(194, 194, 194, 0.144);
 }
 .userprofile{
     display:flex;
@@ -548,6 +556,8 @@ color:var(--writepostheading);
     border-radius:0.2em;
     padding:1%;
     margin-top:20px;
+    border:0.2px solid rgba(180, 180, 180, 0.178);
+    box-sizing: border-box;
 }
 .userprofile span{
     font-size: 10px;

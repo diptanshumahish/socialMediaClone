@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left"></div>
+        <div class="logo">SOCIAL.ly
+
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="/IMG/search.svg" height="20px" alt="">
+                <input type="text" placeholder="Search" class="search">
+            </div>
+            <ul>
+                <li class="left"><img src="/IMG/notification.png" alt="" height="20px"></li>
+                <li class="left"><img src="/IMG/inbox.png" alt="" height="20px"></li>
+                <li class="left"><img src="/IMG/video-camera.png" alt="" height="20px"></li>
+            </ul>
+        </div>
+        <div class="usericon online" onclick="settingsMenuToggle()">
+            <img src="/IMG/beluga.jpg" height="30px" alt="">
+        </div>
+
+        <!-- settingsmenu -->
+        <div class="settingsmenu">
+            <div id="darkbtn">
+                <span></span>
+            </div>
+
+            <div class="settingsinner">
+                <div class="userprofile">
+                    <img src="/IMG/beluga.jpg" alt="user image">
+                    <div>
+                        <p>Aaa Bhai</p>
+                        <a href="">Profile Settings</a>
+
+                    </div>
+                </div>
+                <div class="userprofile">
+                    <img src="/IMG/suggest.png" alt="Feedback">
+                    <div>
+                        <p>Feedback</p>
+                        <a href="">Help Man</a>
+
+                    </div>
+                </div>
+
+                <div class="settinglinks">
+                    <img src="/IMG/appearance.png" alt="settings" class="settingsicon">
+                    <a href="">Appearance <img src="/IMG/arrow.png" width="10px"></a>
+                </div>
+                <div class="settinglinks">
+                    <img src="/IMG/settings.png" alt="settings" class="settingsicon">
+                    <a href="">Settings and Privacy <img src="/IMG/arrow.png" width="10px"></a>
+                </div>
+                <div class="settinglinks">
+                    <img src="/IMG/suggest.png" alt="settings" class="settingsicon">
+                    <a href="">Suggestions <img src="/IMG/arrow.png" width="10px"></a>
+                </div>
+                <div class="settinglinks">
+                    <img src="/IMG/logout.png" alt="settings" class="settingsicon">
+                    <a href="">Logout <img src="/IMG/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Profile Page starts here -->
+    <div class="profilecontainer">
+        <img src="/IMG/arima.jpg" alt="cover iamge of user" class="coverimage">
+        <div class="profiledetails">
+            <div class="leftcolumn">
+                <div class="profiledetailsrow">
+                    <img src="/IMG/beluga.jpg" class="profileimage"alt="">
+                    <div>
+                        <h3>Aaa Bhai </h3>
+
+                    <p>2000 Freinds  0 mutual</p>
+                    <img src="/IMG/Doge.png" alt="member1">
+                    <img src="/IMG/hecker.jpg" alt="memeber2">
+                    <img src="/IMG/harambe.jpg" alt="member3">
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightcolumn">
+                <button>
+                    <img src="/IMG/friend.png" alt="addfriends"> Friends
+                </button>
+                <button>
+                    <img src="/IMG/comment.png" alt="message">   Message
+                </button>
+                <br>
+                <a href=""><img src="/IMG/options1.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>

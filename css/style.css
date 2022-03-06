@@ -31,6 +31,8 @@
     --textinput:black;
     --texthover:rgb(197, 151, 26);
     --orangetexthover:rgb(165, 101, 101);
+    --button:rgb(206, 151, 114);
+    --button1:rgb(216, 202, 202);
    
 
     --container1:#eed07cc9;
@@ -64,6 +66,8 @@
     --textinput:white;
     --texthover:rgb(165, 163, 157);
     --orangetexthover:rgb(219, 210, 210);
+    --button:rgb(134, 118, 109);
+    --button1:rgb(83, 73, 73);
     
 
     --container1:#6e613cc9;

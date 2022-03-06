@@ -1,0 +1,84 @@
+:root{
+    --text:rgb(41, 27, 17);
+}
+
+
+.profilecontainer{
+    padding:20px 15%;
+    color:var(--posttext);
+   
+}
+.coverimage{
+    width:100%;
+    border-radius: 0.2em;
+    margin-bottom: 14px;
+    height:30vh;
+    object-fit: cover;
+}
+.profiledetails{
+    background-color: var(--bg-color);
+    padding:20px;
+    border-radius: 0.1em;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border:0.1em solid rgba(184, 176, 176, 0.11);
+    box-shadow: var(--boxshadow1);
+}
+.profiledetailsrow{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    
+
+}
+.profileimage{
+    width:100px;
+    margin-right: 20px;
+    border-radius:50% ;
+}
+.profiledetailsrow div h3{
+    font-size: 25px;
+   font-weight:bold ;
+}
+.profiledetailsrow p{
+    font-size: 13px;
+}
+.profiledetailsrow div img{
+    width:20px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.rightcolumn button{
+    background-color: var(--button);
+    border:0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.8em;
+    margin-left: 10px;
+    cursor: pointer;
+    color:var(--text-color);
+    font-size: 10px;
+}
+.rightcolumn button img{
+    width:20px
+}
+.rightcolumn button:first-child{
+    background-color: var(--button1);
+}
+.rightcolumn {
+    text-align: right;
+}
+.rightcolumn a{
+    padding:12px;
+    border-radius:3px ;
+    display: inline-flex;
+    margin-top: 30px;
+    height:30px;
+}
+.rightcolumn a img{
+    width:10px;
+   
+}

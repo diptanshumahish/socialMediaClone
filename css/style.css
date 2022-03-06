@@ -29,6 +29,8 @@
     --storyback:rgba(196, 188, 167, 0.397);
     --footer:black;
     --textinput:black;
+    --texthover:rgb(197, 151, 26);
+    --orangetexthover:rgb(165, 101, 101);
    
 
     --container1:#eed07cc9;
@@ -60,6 +62,8 @@
     --storyback:rgba(29, 28, 25, 0.397);
     --footer:white;
     --textinput:white;
+    --texthover:rgb(165, 163, 157);
+    --orangetexthover:rgb(219, 210, 210);
     
 
     --container1:#6e613cc9;
@@ -265,11 +269,12 @@ nav{
 .leftsidebar{
     /* background-color:rgb(255, 255, 255); */
     position:sticky;
-    flex-basis:25%;
+    flex-basis:10%;
     top:70px;
     align-self: flex-start;
     /* height:100vh; */
     border-radius: 0.2em;
+    z-index: 50;
     
     
 }
@@ -283,14 +288,15 @@ nav{
     border-radius: 0.2em;
     background:var(--bg-color);
     padding:0.5em;
-    
+    box-shadow: var(--boxshadow1);
+    border: 0.1px solid rgba(199, 192, 192, 0.123);
 }
 .main{
-    flex-basis:47%;
+    flex-basis:60%;
     /* background-color:white ; */
     border-radius:0.2em ;
    
-    z-index: 50;
+    z-index: 80;
     
 }
 .implinks a,.shortcut a{
@@ -301,6 +307,9 @@ nav{
     width:fit-content;
     color:var(--text-color);
 
+}
+.implinks a:hover{
+    color:var(--texthover);
 }
 .implinks a{
     mix-blend-mode:var(--mixblend);
@@ -316,6 +325,9 @@ nav{
 .implinks a:last-child{
     color:#bb5526;
 }
+.implinks a:last-child:hover{
+    color:var(--orangetexthover);
+}
 .implinks{
     border-bottom:1px solid grey;
 }
@@ -323,6 +335,10 @@ nav{
     margin: 25px 0;
     color:var(--shortcut);
     font-weight:bold;
+}
+.shortcut a:hover{
+    color:var(--texthover);
+
 }
 .sidebartitle{
     display:flex;
@@ -334,6 +350,9 @@ nav{
     text-decoration: none;
     color:#e26f2d;
     font-size: 12px;
+}
+.sidebartitle a:hover{
+    color:var(--orangetexthover);
 }
 .sidebartitle h4{
    font-weight:bold;
@@ -367,6 +386,9 @@ nav{
     text-decoration: none;
     color:#cc5815;
     
+}
+.event a:hover{
+    color:var(--orangetexthover);
 }
 .leftevent span{
     position:absolute;
@@ -629,6 +651,7 @@ color:var(--writepostheading);
     text-align: center;
     padding:10px 0 20px;
     font-size: 13px;
+    margin-top: 50px;
     color:var(--footer);
 }
 .settingsmenu{
@@ -659,8 +682,7 @@ color:var(--writepostheading);
 .settinglinks{
     display:flex;
     align-items: center;
-    margin: 15px 0;;
-
+    margin: 15px 0;
 }
 .settinglinks .settingsicon{
     width:38px;
